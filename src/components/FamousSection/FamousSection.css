@@ -1,0 +1,13 @@
+.new-person-section {
+  padding: 5vh;
+}
+
+label {
+  margin-right: 1vh;
+  margin-bottom: 3vh;
+}
+
+input {
+  margin-right: 3vh;
+  margin-bottom: 3vh;
+}
