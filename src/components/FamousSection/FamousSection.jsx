@@ -51,26 +51,26 @@ function FamousSection() {
     //       with a `name` and a `role` property
   
 
-
     return (
       <section className="new-person-section">
         <form onSubmit={addPerson}>
           <label htmlFor="name-input">Name:</label>
-          <input id="name-input" onChange={e => setPersonName(e.target.value)} />
+          <input id="name-input" placeholder='Person Name' onChange={e => setPersonName(e.target.value)} />
           <label htmlFor="role-input">Famous for:</label>
-          <input id="role-input" onChange={e => setPersonRole(e.target.value)} />
+          <input id="role-input" placeholder='Famous for...' onChange={e => setPersonRole(e.target.value)} />
           <button type="submit">Done</button>
         </form>
         <p>
           {famousPersonName} is famous for "{famousPersonRole}".
         </p>
         <ul>
-          {/* TODO: Render the list of famous people */}
+      
           {
           famousPeopleArray.map((person) => {
             return <li key={person.id}>{person.name} is famous for {person.role}</li> 
           })
           }
+
         </ul>
       </section>
     );

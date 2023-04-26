@@ -11,3 +11,7 @@ input {
   margin-right: 3vh;
   margin-bottom: 3vh;
 }
+
+ul {
+  list-style-type: none;
+}
